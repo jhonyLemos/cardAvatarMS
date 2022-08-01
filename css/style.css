@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Cores fundo*/
+    --MidnightBlue : #191970;
+    --DarkSlateBlue: #483D8B;
+    --SlateBlue3 : #6959CD;
+    
+    /*Fontes*/
+    --White: white;
+    --GhostWhite: #f8f8ff;
+    --TwoBlack: black;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.alphacoders.com/514/thumb-1920-514042.jpg);
+    background-repeat: no-repeat;
+    font-size: 60.8%;
+}
+
+.container{
+    background: rgba(28, 0, 128, 0.315) ;
+    width: 300px;
+    min-height: 400px;
+    margin: 15% auto;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+    border: 1px solid var(--SlateBlue3);
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(235, 235, 235, 0.8);
+}
+
+.container .content-avatar{
+    background: linear-gradient( 200deg, var(--MidnightBlue), var(--SlateBlue3));
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 25px rgba(206, 140, 247, 0.568);
+
+    margin: 25px auto;
+
+}
+
+.content-avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+
+}
+
+.content-title{
+    display: block;
+    text-align: center;
+    color: var(--GhostWhite);
+    font-family: 'Heebo', sans-serif ;
+    font-size: 1rem;
+}
+
+.content-title h3{
+    font-size: 1.5em;
+}
+
+.content-title p, a{
+    font-style: italic;
+    color: var(--GhostWhite);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.content-title a:hover, p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 3px;
+    
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a{
+    background: var(--MidnightBlue);
+    margin: 15px;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px rgba(206, 140, 247, 0.568);
+
+    transition: 0.5s ease-in-out;
+}
+
+.social-media a:hover{
+    width: 53px;
+    height: 53px;
+    background: var(--GhostWhite);
+    color: var(--DarkSlateBlue);
+}
